@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    summary {
+        list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    summary::marker {
+        display: none;
+    }
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    color: black;
+}
+
+@keyframes flyRound {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(200px, -100px) rotate(45deg);
+  }
+  50% {
+    transform: translate(400px, 0px) rotate(90deg);
+  }
+  75% {
+    transform: translate(200px, 100px) rotate(135deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(180deg);
+  }
+}
+
