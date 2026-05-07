@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Search } from "lucide-react";
+import { Search, UserRound, UserRoundCheck } from "lucide-react";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-10 left-0 h-20 w-full z-50 transition-all duration-300 ${
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
@@ -68,12 +68,13 @@ const Navbar = () => {
           </div>
 
           <div className="navbar-end flex flex-shrink gap-3">
-            <span className="text-xl p-2 bg-primary text-white rounded-full cursor-pointer">
-              <Search />
-            </span>
+            <button className="p-2 bg-primary text-white rounded-full cursor-pointer flex gap-2 items-center px-5 justify-center">
+            <Search size={20}/>
+             <span className="text-sm">Search</span> 
+            </button>
 
-            <button className="bg-secondary text-white py-2 px-4 rounded-full">
-              Login
+            <button className="bg-secondary text-white py-2 px-5 rounded-full text-sm flex gap-2 items-center justify-center">
+             <span><UserRound size={20}/></span><span>Login</span> 
             </button>
           </div>
         </div>

@@ -56,8 +56,8 @@ const StudyTab = () => {
     <div className="relative"><img src={item.image} alt={item.title} className="w-full h-40 object-cover rounded-md"/>
     <div className="absolute z-10 p-2 bg-primary text-white bottom-[-17px] left-[5%] rounded-full">   <span className="" size={10}>{item.icon}</span></div>
  </div>
-    <h1 className="text-xs font-bold mt-6 ps-2">{item.title}</h1>
-    <p className="text-xs mt-1 ps-2">{item.desc}</p>
+    <h1 className="font-semibold text-sm mt-8 ps-2">{item.title}</h1>
+    {/* <p className="text-xs mt-1 ps-2">{item.desc}</p> */}
     </div>
 ))}
 

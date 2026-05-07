@@ -18,7 +18,7 @@ const WhyChoose = () => {
   return (
     <div className="max-w-7xl mx-auto px-5 mb-10">
       
-      <h1 className="text-3xl font-bold text-start mb-10">
+      <h1 className="text-3xl font-bold text-start mb-6 md:mb-10">
         WHY <span className="text-primary">CHOOSE</span> US?
       </h1>
 

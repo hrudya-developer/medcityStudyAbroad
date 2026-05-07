@@ -20,7 +20,7 @@ import 'animate.css';
 const Hero = () => {
     return (
         <>
-            <div className="relative min-h-screen overflow-hidden bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: `url(${heroBg1})`, backgroundAttachment: `fixed`     }}>
+            <div className="relative min-h-screen overflow-hidden bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: `url(${heroBg1})`}}>
 <div className="mt-36">
 
 
@@ -99,27 +99,27 @@ rounded-3xl p-6 shadow-sm mt-5
 <div>
 <div className="max-w-7xl mx-auto flex justify-between mt-40 px-5">
 
-   <div className="flex gap-5"> <div className="flex gap-3">
-        <span className="text-primary block"><UserRoundCheck size={40}/></span>
-        <p className="text-sm text-secondary font-semibold">Expert <br /> Guidance</p>
+   <div className="flex gap-3 md:gap-5"> <div className="flex gap-3">
+        <span className="text-primary block"><UserRoundCheck size={32} md:size={40}/></span>
+        <p className="text-xs sm:text-xs md:text-xs lg:text-sm xl:text-md text-secondary font-semibold">Expert <br /> Guidance</p>
         
     </div>
-    <div className="flex gap-3">
-        <span className="text-primary block"><FileCheck size={40}/></span>
-        <p className="text-sm text-secondary font-semibold">Visa <br /> Assistance</p>
+    <div className="flex gap-2">
+        <span className="text-primary block"><FileCheck size={32} md:size={40}/></span>
+        <p className="text-xs sm:text-xs md:text-xs lg:text-sm xl:text-md text-secondary font-semibold">Visa <br /> Assistance</p>
     </div>
    
-      <div className="flex gap-3">
-        <span className="text-primary block"> <BadgeDollarSign size={40}/></span>
-        <p className="text-sm text-secondary font-semibold">Scholarship <br /> Support</p>
+      <div className="flex gap-2">
+        <span className="text-primary block"> <BadgeDollarSign size={32} md:size={40}/></span>
+        <p className="text-xs sm:text-xs md:text-xs lg:text-sm text-secondary font-semibold">Scholarship <br /> Support</p>
     </div>
-      <div className="flex gap-3">
-        <span className="text-primary block"><Backpack size={40}/></span>
-        <p className="text-sm text-secondary font-semibold">Travel <br /> Support</p>
+      <div className="flex gap-2">
+        <span className="text-primary block"><Backpack size={32} md:size={40}/></span>
+        <p className="text-xs sm:text-xs md:text-xs lg:text-sm xl:text-md text-secondary font-semibold">Travel <br /> Support</p>
     </div></div>
     <div>
         <button className="bg-primary cursor-pointer hover:bg-secondary text-white py-4 px-5 rounded-full flex gap-1 justify-center text-sm"><span>Explore More</span> <ArrowRight size={20}/></button>
-        <p className="text-xs mt-2 mr-2 flex"><span><ShieldCheck size={16} className="text-primary mx-2"/></span>Trusted by <span className="mx-1 font-bold text-primary">50K+</span> students worldwide</p>
+        <p className="text-xs mt-2 mb-5 mr-2 flex"><span><ShieldCheck size={16} className="text-primary mx-2"/></span>Trusted by <span className="mx-1 font-bold text-primary">50K+</span> students worldwide</p>
     </div>
 
 
