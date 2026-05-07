@@ -1,6 +1,6 @@
 import aeroplane1 from "../assets/aeroplane_1.png";
 import candidateHero from "../assets/candidateHero.png";
-import heroBg2 from "../assets/heroBg_2.png";
+import heroBg2 from "../assets/herobg_2.png";
 import { ArrowRight, Backpack, BadgeDollarSign, FileCheck, Globe, GraduationCap, UserRoundCheck, UsersRound, ShieldCheck, Globe2 } from "lucide-react";
 import SearchBar from "./SearchBar";
 import map2 from '../assets/map2.png';
