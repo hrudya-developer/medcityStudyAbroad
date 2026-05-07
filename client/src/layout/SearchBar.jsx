@@ -4,7 +4,7 @@ import React from 'react'
 const SearchBar = () => {
   return (
     <section>
-        <div className="bg-white grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 max-w-7xl mx-auto px-5 py-3 shadow-md border border-gray-50">
+        <div className="bg-white grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 max-w-7xl mx-auto px-5 py-3 shadow-md border border-gray-50 animate__animated animate__slideInUp">
             <div className='box_outer flex gap-3 p-3 border-r border-gray-100'>
                 <div className='bg-secondary text-white rounded-full grid place-content-center size-10'>
                     <MapPin size={18} className='text-white'/></div>

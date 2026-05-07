@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Search, UserRound, UserRoundCheck } from "lucide-react";
+import { Menu, Search, UserRound } from "lucide-react";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
@@ -11,83 +11,95 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div
-      className={`fixed top-10 left-0 h-20 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto max-lg:collapse rounded-md">
-        <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
+   <header
+  className={`fixed left-0 w-full z-50 transition-all duration-300 ${
+    scrolled
+      ? "top-0 bg-white shadow-md py-2"
+      : "top-10 bg-transparent py-4"
+  }`}
+>
+      <div className="max-w-7xl mx-auto px-4 animate__animated animate__zoomIn">
 
-        <label
-          htmlFor="navbar-1-toggle"
-          className="fixed inset-0 hidden max-lg:peer-checked:block"
-        ></label>
+        <div className="navbar p-0 min-h-0">
 
-        <div
-          className={`collapse-title pe-4 navbar transition-all duration-300 ${
-            scrolled ? "min-h-[70px]" : "min-h-[95px]"
-          }`}
-        >
-          <div className="navbar-start">
-            <label
-              htmlFor="navbar-1-toggle"
-              className="btn btn-ghost lg:hidden"
-            >
-              ☰
-            </label>
+          {/* LEFT */}
+          <div className="navbar-start gap-2">
 
+            {/* MOBILE MENU */}
+            <div className="dropdown lg:hidden">
+              <label tabIndex={0} className="btn btn-ghost">
+                <Menu />
+              </label>
+
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-white rounded-box w-64 gap-2"
+              >
+                <li><a>DESTINATION</a></li>
+                <li><a>COURSES</a></li>
+                <li><a>VISA PROCESS</a></li>
+                <li><a>SCHOLARSHIPS</a></li>
+                <li><a>ABOUT US</a></li>
+                <li><a>CONTACT</a></li>
+              </ul>
+            </div>
+
+            {/* LOGO */}
             <button
-              className={`bg-primary grid place-content-center p-2 rounded-lg rounded-br-[85px] shadow-lg transition-all duration-300 ${
-                scrolled ? "w-[190px] h-[60px]" : "w-[240px] h-[75px]"
+              className={`bg-primary grid place-content-center rounded-xl rounded-br-[85px] shadow-lg transition-all duration-300 ${
+                scrolled
+                  ? "w-[180px] h-[60px]"
+                  : "w-[230px] h-[75px]"
               }`}
             >
-              <img src={logo} className="w-full h-auto" alt="logo" />
+              <img
+                src={logo}
+                className="w-full h-auto object-contain p-2"
+                alt="logo"
+              />
             </button>
           </div>
 
+          {/* CENTER MENU */}
           <div className="navbar-center hidden lg:flex">
+
             <ul
-              className={`menu menu-horizontal px-1 flex gap-8 font-noto font-semibold transition-colors duration-300 ${
+              className={`menu menu-horizontal gap-6 font-semibold transition-all duration-300 ${
                 scrolled ? "text-black" : "text-secondary"
               }`}
             >
-              <li>DESTINATION</li>
-              <li>COURSES</li>
-              <li>VISA PROCESS</li>
-              <li>SCHOLARSHIPS</li>
-              <li>ABOUT US</li>
-              <li>CONTACT</li>
+              <li><a>DESTINATION</a></li>
+              <li><a>COURSES</a></li>
+              <li><a>VISA PROCESS</a></li>
+              <li><a>SCHOLARSHIPS</a></li>
+              <li><a>ABOUT US</a></li>
+              <li><a>CONTACT</a></li>
             </ul>
+
           </div>
 
-          <div className="navbar-end flex flex-shrink gap-3">
-            <button className="p-2 bg-primary text-white rounded-full cursor-pointer flex gap-2 items-center px-5 justify-center">
-            <Search size={20}/>
-             <span className="text-sm">Search</span> 
+          {/* RIGHT */}
+          <div className="navbar-end gap-3">
+
+            <button className="hidden sm:flex bg-primary text-white rounded-full px-5 py-3 items-center gap-2 hover:scale-105 transition-all duration-300">
+              <Search size={18} />
+              <span className="text-sm">Search</span>
             </button>
 
-            <button className="bg-secondary text-white py-2 px-5 rounded-full text-sm flex gap-2 items-center justify-center">
-             <span><UserRound size={20}/></span><span>Login</span> 
+            <button className="bg-secondary text-white rounded-full px-5 py-3 flex items-center gap-2 hover:scale-105 transition-all duration-300">
+              <UserRound size={18} />
+              <span className="text-sm hidden sm:block">Login</span>
             </button>
+
           </div>
-        </div>
-
-        <div className="collapse-content lg:hidden bg-white">
-          <ul className="menu">
-            <li><button>Item 1</button></li>
-            <li><button>Parent</button></li>
-            <li><button>Item 3</button></li>
-          </ul>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

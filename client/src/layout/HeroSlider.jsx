@@ -13,7 +13,7 @@ const HeroSlider = () => {
    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 pt-10 md:pt-12">
 
     {/* LEFT CONTENT */}
-    <div className="flex flex-col gap-3 relative text-center md:text-left">
+    <div className="flex flex-col gap-3 relative text-center md:text-left animate__animated animate__backInLeft">
 
 
         <img
@@ -67,7 +67,7 @@ const HeroSlider = () => {
     </div> */}
 
 
-<div className="relative flex justify-center items-end w-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] bg-cover bg-center bg-no-repeat rounded-3xl"
+<div className="relative flex justify-center items-end w-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] bg-cover bg-center bg-no-repeat rounded-3xl animate__animated animate__fadeInDown"
         style={{
             backgroundImage: `url(${heroBg2})`,
         }}
@@ -76,7 +76,7 @@ const HeroSlider = () => {
 <img
             src={candidateHero}
             alt="Candidate Hero"
-            className="w-full max-w-sm sm:max-w-md md:max-w-sm object-contain"
+            className="w-full max-w-sm sm:max-w-md md:max-w-sm object-contain animate__animated animate__backInRight"
         />
 
         <div className="bg-white p-3 rounded-md shadow-md mb-6">

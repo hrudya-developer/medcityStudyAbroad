@@ -3,30 +3,30 @@ import { GraduationCap, UsersRound, Globe } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 px-5 py-10">
+    <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 px-5 py-10 animate__animated animate__slideInUp">
 
       {/* LEFT CONTENT */}
       <div className="w-full md:w-1/2">
 
-        <h1 className="text-sm font-bold mb-4 text-primary animate__animated animate__fadeInLeftBig">
+        <h1 className="text-sm font-bold mb-4 text-primary">
           ABOUT US
-          <span className="flex items-center gap-1 mt-2 animate__animated animate__fadeInLeftBig">
+          <span className="flex items-center gap-1 mt-2">
             <span className="w-4 h-[3px] bg-primary"></span>
             <span className="w-16 h-[3px] bg-gray-300"></span>
           </span>
         </h1>
 
-        <h1 className="text-2xl sm:text-3xl font-bold text-secondary mb-1 animate__animated animate__fadeInLeftBig">
+        <h1 className="text-2xl sm:text-3xl font-bold text-secondary mb-1">
           EMPOWERING DREAMS
         </h1>
-        <h1 className="text-2xl sm:text-3xl font-bold text-primary animate__animated animate__fadeInLeftBig">
+        <h1 className="text-2xl sm:text-3xl font-bold text-primary">
           BUILDING GLOBAL FUTURES
         </h1>
 
-        <p className="text-xs md:text-sm lg:text-md pt-2 animate__animated animate__fadeInLeftBig">
+        <p className="text-xs md:text-sm lg:text-md pt-2">
           At Medcity International, we believe education is the key to a boundless future. For over a decade, we've been dedicated to helping students explore global opportunities and achieve their academic and career aspirations.
         </p>
-      <p className="text-xs md:text-sm lg:text-md pt-2 animate__animated animate__fadeInLeftBig">
+      <p className="text-xs md:text-sm lg:text-md pt-2">
        
 
 Our experienced counselors provide personalized guidance tailored to each student's goals, ensuring a smooth and confident journey toward international education.
